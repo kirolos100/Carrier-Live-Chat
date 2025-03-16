@@ -21,6 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # azd required
+      AZURE_DEV_COLLECT_TELEMETRY: no
       AZURE_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID }}
       AZURE_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
       AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
